@@ -62,13 +62,13 @@ class ActionWeather(Action):
         wind_mph = data['current']['wind_speed']
         
         response = f"""
-        At {city.title()}: \n
-        Weather description: {condition}.\n
-        Temperature: {temperature} degree celsius \n
-        Humidity: {humidity}\n
+        At {city.title()}: 
+        Weather description: {condition}.
+        Temperature: {temperature} degree celsius 
+        Humidity: {humidity}
         Wind Speed: {wind_mph} mph
         """
         
-        dispatcher.utter_message(text=response)
+        dispatcher.utter_message(text=f'Response: {response}')
 
         return []
