@@ -1,0 +1,199 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - how you doin?
+    - greetings
+    - hi bot
+    - hello bot
+    - hello robot
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - ciao
+    - talk to you later
+    - i'm off
+    - will talk to you soon again
+    - bye for now
+    - ok thanks. bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - hi there, are you the bot?
+    - are you a chatbot
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+- intent: ask_developer
+  examples: |
+    - who build you?
+    - by whom were you built?
+    - who is your developer?
+    - who is your inventor?
+    - may i know who is your inventor?
+    - do you know who built you?
+    - can you tell me your developer's name?
+    - who created you?
+    - by whom were you created?
+    - who designed you?
+    - by whom were you designed?
+    - who put you together?
+    - what is the name of the person that built you?
+    - do you know your creator's name?
+    - can you share your programmer's name with me?
+    - i want to know who is your builder.
+- intent: weather
+  examples: |
+    - How is the weather at [Kathmandu](location) today?
+    - How is the weather at [Dhulikhel](location) today?
+    - What is the weather like at [Bhaktapur](location) today?
+    - [ktm]{"entity": "location", "value": "kathmandu"} ko masuam
+    - weather [Kathmandu]{"entity": "location", "value": "kathmandu"}
+    - weather of [kathmandu](location)
+    - weather of [pokhara](location)
+    - weather of [bhaktapur](location)
+    - weather of [ktm]{"entity": "location", "value": "kathmandu"}
+    - I'd like to know the weather at [pkr](location)?
+    - What's the weather in [Pokhara](location) at the moment?
+    - Show me what's the weather like in [bkt](location) today?
+    - Is the weather nice in [Bhaktapur](location) today?
+    - I am going to [Pokhara](location) today and I wonder what is the weather out there?
+    - I am going to [kathmandu](location) today and I wonder what is the weather out there?
+    - Show me the weather in [pkr]{"entity": "location", "value": "pokhara"}
+    - Tell me the weather in [kathmandu](location)
+    - The weather condition in [bhaktapur](location)
+    - weather at [gorkha](location)?
+    - weather at [banepa](location)?
+    - weather at [Dhangadhi](location)?
+    - weather at [Mahendrangar](location)?
+    - how's the weather at [Baglung](location)
+- synonym: kathmandu
+  examples: |
+    - KATHMANDU
+    - Kathmandu
+    - KTM
+    - ktm
+- synonym: pokhara
+  examples: |
+    - pkr
+    - PKR
+    - Pokhara
+    - POKHARA
+- synonym: bhaktapur
+  examples: |
+    - Bhadgaun
+    - Bhaktapur
+    - BKT
+    - bkt
+    - BHAKTAPUR
+- synonym: baglung
+  examples: |
+    - Baglung
+    - BAGLUNG
+- lookup: location
+  examples: |
+    - Baglung
+    - Banepa
+    - Bhadrapur
+    - Bhaktapur
+    - Bharatpur
+    - Bhim Dutta
+    - Bidur
+    - Biratnagar
+    - Birgun
+    - Butwal
+    - Byas
+    - Daman
+    - Dhangadhi
+    - Dhankuta
+    - Dharan
+    - Dhulikhel
+    - Dipayal-Silgadhi
+    - Gaur
+    - Ghorahi
+    - Gorkha
+    - Gulariya
+    - Hetauda
+    - Ilam
+    - Itahari
+    - Jaleswar
+    - Janakpur
+    - Kapilvastu
+    - Kathmandu
+    - Khandbari
+    - Kirtipur
+    - Lahan
+    - Lalitpur
+    - Madhyapur Thimi
+    - Malangwa
+    - Narayan
+    - Nepalganj
+    - Panauti
+    - Pokhara
+    - Rajbiraj
+    - Siddharthanagar
+    - Siraha
+    - Tansen
+    - Tikapur
+    - Waling

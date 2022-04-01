@@ -1,0 +1,67 @@
+version: "2.0"
+
+stories:
+
+
+- story: greet user 
+  steps: 
+  - intent: greet 
+  - action: utter_greet 
+
+
+- story: say good bye 
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: developer story 1
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: ask_developer
+  - action: utter_developed_by
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- story: developer story 2
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: ask_developer
+  - action: utter_developed_by
+  
+
+
+- story: interactive_story_1 
+  steps: 
+  - intent: weather 
+    entities: 
+    - location: kathmandu
+  - action: action_weather
+
+
+- story: interactive_story_2
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: weather 
+    entities: 
+    - location: bhaktapur
+  - action: action_weather
+
+
+- story: interactive_story_3
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: weather 
+    entities:
+    - location: kathmandu 
+  - slot_was_set:
+    - location: kathmandu 
+  - action: action_weather 
+  - intent: goodbye
+  - action: utter_goodbye

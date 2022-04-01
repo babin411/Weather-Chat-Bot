@@ -1,0 +1,53 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_developer:
+    use_entities: true
+- weather:
+    use_entities: true
+- inform:
+    use_entities: true
+entities:
+- location
+slots:
+  location:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  - text: What can I do for you?
+  - text: Hi, there!
+  utter_goodbye:
+  - text: Bye
+  - text: Nice to meet you
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_developed_by:
+  - text: I was developed by Babin Joshi
+  - text: Babin Joshi is my creator
+  - text: I was programmed by Babin Joshi
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_developed_by
+- action_weather
+forms: {}
+e2e_actions: []

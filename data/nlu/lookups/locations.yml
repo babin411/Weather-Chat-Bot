@@ -1,0 +1,48 @@
+version: "3.0"
+nlu: 
+  - lookup: location
+    examples: | 
+      - Baglung
+      - Banepa
+      - Bhadrapur
+      - Bhaktapur
+      - Bharatpur
+      - Bhim Dutta
+      - Bidur 
+      - Biratnagar
+      - Birgun
+      - Butwal 
+      - Byas 
+      - Daman
+      - Dhangadhi 
+      - Dhankuta 
+      - Dharan 
+      - Dhulikhel 
+      - Dipayal-Silgadhi
+      - Gaur
+      - Ghorahi
+      - Gorkha
+      - Gulariya
+      - Hetauda
+      - Ilam
+      - Itahari 
+      - Jaleswar
+      - Janakpur 
+      - Kapilvastu 
+      - Kathmandu 
+      - Khandbari
+      - Kirtipur
+      - Lahan 
+      - Lalitpur 
+      - Madhyapur Thimi 
+      - Malangwa
+      - Narayan 
+      - Nepalganj 
+      - Panauti
+      - Pokhara 
+      - Rajbiraj
+      - Siddharthanagar
+      - Siraha 
+      - Tansen 
+      - Tikapur
+      - Waling 
